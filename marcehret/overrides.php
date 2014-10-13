@@ -1,67 +1,17 @@
-<?php /* $Id: overrides.php 1569 2010-12-31 05:42:00Z caseydk $ $URL: https://web2project.svn.sourceforge.net/svnroot/web2project/tags/version2.3/style/wps-redmond/overrides.php $ */
+<?php
+if (!defined('W2P_BASE_DIR')) {
+    die('You should not access this file directly.');
+}
 
-class CTitleBlock extends CTitleBlock_core {
-
-	function show() {
-		global $AppUI, $a, $m, $tab, $infotab;
-		$this->loadExtraCrumbs($m, $a);
-		$uistyle = $AppUI->getPref('UISTYLE') ? $AppUI->getPref('UISTYLE') : $w2Pconfig['host_style'];
-
-		$title_temp = $AppUI->_($this->title);
-		if ($title_temp) {
-			$s = '<div class="section clearfix"><h1 style="float:left;">' . $title_temp . '</h1>';
-		} else {
-			$s = '<div class="section clearfix content_options">';		
-		}
-		
-
-
-		
-		$s .= '<div style="float:right;">';
-
-		foreach ($this->cells1 as $c) {
-			$s .= '<div style="float:left;padding-left:5px;" ' . ($c[0] ? (' ' . $c[0]) : '') . '>';		
-			$s .= $c[2] ? $c[2] : '';
-			$s .= $c[1] ? $c[1] : '';
-			$s .= $c[3] ? $c[3] : '';			
-			$s .= '</div>';
-		}
-		$s .= '</div></div>';
-
-		if (count($this->crumbs) || count($this->cells2)) {
-			$crumbs = array();
-			$class = 'navigation horizontal';
-			foreach ($this->crumbs as $k => $v) {
-				$t = $v[1] ? '<img class="testxxx" src="' . w2PfindImage($v[1], $this->module) . '" border="" alt="" />&nbsp;' : '';
-				$t .= $AppUI->_($v[0]);
-				$crumbs[] = '<li><a href="'.$k.'"><span>'.$t.'</span></a></li>';
-			}
-			$s .= '<div class="section clearfix"><div class="'.$class.'" style="float:left;"><ul>';
-			$s .= implode('', $crumbs);
-			$s .= '</ul></div><div style="float:right">';
-
-			foreach ($this->cells2 as $c) {
-				$s .= '<div style="float:left" ' . ($c[0] ? " $c[0]" : '') . '>';			
-				$s .= $c[2] ? $c[2] : '';
-				$s .= $c[1] ? $c[1] : '';
-				$s .= $c[3] ? $c[3] : '';
-				$s .= '</div>';
-			}
-			$s .= '</div></div>';
-		}
-		echo '' . $s;
-//		if (($a != 'index' || $m == 'system' || $m == 'calendar' || $m == 'smartsearch') && !$AppUI->boxTopRendered && function_exists('styleRenderBoxTop')) {
-//			echo styleRenderBoxTop();
-//			$AppUI->boxTopRendered = true;
-//		}
-	}
+class style_marcehret extends w2p_Theme_Base
+{
 
 }
 
 ##
 ##  This overrides the show function of the CTabBox_core function
 ##
-class CTabBox extends CTabBox_core {
+class CTabBox extends w2p_Theme_TabBox {
 	function show($extra = '', $js_tabs = false) {
 		global $AppUI, $w2Pconfig, $currentTabId, $currentTabName, $m, $a;
 		$this->loadExtras($m, $a);
