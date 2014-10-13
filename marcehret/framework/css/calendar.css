@@ -1,0 +1,226 @@
+/* popup calendar */
+body.popcal {
+background-color: #f0f0f0;
+}
+
+table.poptitle {
+background-color: #ffffff;
+}
+table.poptitle td {
+background-color: #ffffff;
+}
+table.poptitle th {
+background-color: #ffffff;
+color: #000000;
+
+font-weight: bold;
+}
+
+table.popcal {
+background-color: #cccccc;
+}
+
+table.popcal th {
+background-color: #ffffff;
+color: #000000;
+
+font-weight: normal;
+}
+
+table.popcal td {
+background-color: #ffffff;
+
+text-align: center;
+}
+
+table.popcal td.empty {
+background-color: #e0e0e0;
+}
+
+table.popcal td.today {
+}
+
+table.popcal td.weekend {
+background-color: #f0f0f0;
+}
+
+table.popcal a:link,
+table.popcal a:visited {
+color: #0000ff;
+text-decoration: none;
+}
+
+table.popcal a.today:link,
+table.popcal a.today:visited {
+color: #ff0000;
+font-weight: bold;
+}
+
+table.popcal a.weekend:link,
+table.popcal a.weekend:visited {
+color: #0000aa;
+}
+
+table.popcal a.empty:link,
+table.popcal a.empty:visited {
+color: #777777;
+}
+
+
+
+
+
+/* month calendar - title area */
+
+table.motitle {
+width: auto;
+}
+
+table.motitle td {
+vertical-align:top;
+}
+
+table.motitle th {
+text-align:center;
+}
+
+
+
+
+
+/* mini calendar - title area */
+table.minititle {
+padding-top:20px;
+padding-bottom:10px;
+}
+table.minititle td {
+}
+table.minititle th {
+font-weight: normal;
+text-align:center;
+}
+
+
+
+
+table.minical, table.mocal {
+background-color: #fff;
+}
+
+table.minical th, table.mocal th {
+font-weight: normal;
+
+padding:2px;
+}
+
+table.minical td, table.mocal td {
+font-weight: normal;
+border: 1px solid #ddd !important;
+padding:2px;
+}
+
+table.minical th,
+table.mocal th {
+    background-color: #006699;
+    color: #FFFFFF;
+}
+
+
+
+table.minical a,
+table.mocal a {
+text-decoration:none;
+}
+
+
+.week {
+}
+
+.weekend {
+background-color: #f0f0f0;
+}
+
+.day{
+}
+
+table.minical td.today, table.mocal td.today {
+border : 2px solid #f00;
+}
+
+.empty {
+color: #aaaaaa;
+background-color: #E0E0E0;
+}
+
+td.weekend,
+td.weekend a,
+td.empty,
+td.empty a {
+color:#888;
+}
+
+
+.event {
+background-color: #ffffcc;
+
+}
+.task {
+background-color: #ccccff;
+
+}
+.eventtask {
+background-color: #ffccff;
+}
+
+.eventtoday {
+background-color: #ffffcc;
+border : 1px dotted red;
+}
+
+.tasktoday {
+background-color: #ccccff;
+border : 1px dotted red;
+}
+
+.eventtasktoday {
+background-color: #ffccff;
+border : 1px dotted red;
+}
+
+
+
+/* week */
+
+td.weekDay{
+height:360px;
+text-align: left;
+border:5px solid #fff;
+padding:10px;
+background-color:#f6f6f6;
+}
+td.weekDay table {
+padding:5px;
+
+}
+td.weekendDay {
+height:360px;
+padding:10px;
+border:5px solid #fff;
+background-color:#F0F0F0;
+}
+
+td.weekendDay table {
+padding:5px;
+
+}
+
+
+
+/* daily calendar */
+table.tbl td.event {
+background-color: #fff0b0;
+}
+
+table.tbl td.event td {
+background-color: #fff0b0;
+}

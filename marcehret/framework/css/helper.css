@@ -1,0 +1,47 @@
+
+/*	helper
+------------------------------------------------------------------------------*/
+
+.left {text-align:left;}
+.center {text-align:center;}
+.right {text-align:right;}
+
+
+.hidden
+{
+position:absolute;
+left:-10000px;
+height:0;
+width:0;
+overflow:hidden;
+line-height:0;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+
+/* clearing floats */
+.navigation:after, .clearfix:after
+{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.navigation {zoom:1;}
+
+
+
+
+
+
+

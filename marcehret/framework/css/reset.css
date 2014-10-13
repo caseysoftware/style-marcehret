@@ -1,0 +1,117 @@
+
+
+
+/*	reset
+------------------------------------------------------------------------------*/
+
+html, body, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,div,br,
+fieldset, form, label, legend, select, button, textarea,
+table, caption, tbody, tfoot, thead, tr, th, td, button
+{
+	margin:0;
+	padding:0;
+	border-width:0;
+	outline:0;
+	font-style:inherit;
+	font-size:100%;
+	font-family:inherit;
+	font-weight:normal;
+	vertical-align:baseline;
+	line-height:inherit;
+	border-style:solid;
+	background-repeat:no-repeat;
+}
+
+a,span
+{		
+	background-repeat:no-repeat;
+	margin:0;
+}
+
+
+a	{cursor:pointer;text-decoration:none;}
+
+input, textarea, select
+{
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+	line-height:normal;
+}
+	
+:focus
+{
+	outline:0;
+}
+
+html
+{
+	height:auto;
+	font-size:0.625em;
+	
+}
+
+body
+{
+	height:auto;
+}
+
+ol, ul
+{
+	list-style:none;
+}
+
+/* tables need 'cellspacing="0"' in markup */
+table
+{
+	border-collapse:collapse;
+	border-spacing:0;
+	height:auto;
+	background-color:transparent;
+}
+
+caption, th, td
+{
+	font-weight:normal;
+	vertical-align:top;
+	line-height:normal;
+}
+
+textarea
+{
+	font-family:inherit;
+	font-size:inherit;
+}
+
+body
+{
+	color:#000;
+	background-color:#fff;
+}
+
+fieldset
+{
+	position:relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

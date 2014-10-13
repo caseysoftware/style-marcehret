@@ -1,0 +1,836 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de-DE">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>CSS Framework</title>
+ 
+	<link rel="stylesheet" href="main.css" type="text/css" media="screen,projection" />
+	<!--[if lt IE 8]>
+	<script src="js/IE8.js"></script>
+	<![endif]-->
+	<script src="js/jquery-1.6.2.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		 
+		 $(".box a.toggle-content").click(function(event){
+		   $(this).parents(".box_header").next(".box_content").slideToggle(100);
+		   
+		   // Stop the link click from doing its normal thing
+		   event.preventDefault();
+		 });
+		});
+	</script>
+	
+</head>
+
+<body>
+
+	<div class="page">
+	
+		<div id="page-header">
+			<div class="grid_fluid_12">
+				<div class="grid_12">
+					<div class="content">
+						<h1>FrameWork</h1>
+						<h3>nested grid (inside .grid_12 .content)</h3>
+						<div class="grid_fluid_12 show-grid">
+							<div class="grid_4">
+								<div class="content">
+									01
+								</div>
+							</div>
+							<div class="grid_4">
+								<div class="content">
+									05
+								</div>
+							</div>
+							<div class="grid_4">
+								<div class="content">
+									06
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content">
+						<h3>nested grid (inside .grid_12)</h3>
+					</div>
+					<div class="grid_fluid_12 show-grid">
+						<div class="grid_4">
+							<div class="content">
+								01
+							</div>
+						</div>
+						<div class="grid_4">
+							<div class="content">
+								02
+							</div>
+						</div>
+						<div class="grid_4">
+							<div class="content">
+								03
+							</div>
+						</div>
+					</div>
+					<div class="content">
+						<h3>nested grid with padding (inside .grid_12 .content)</h3>
+						<div class="grid_fluid_12 show-grid-with-padding">
+							<div class="grid_4">
+								<div class="content">
+									01
+								</div>
+							</div>
+							<div class="grid_4">
+								<div class="content">
+									05
+								</div>
+							</div>
+							<div class="grid_4">
+								<div class="content">
+									06
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content">
+						<h3>nested grid with padding (inside .grid_12)</h3>
+					</div>
+					<div class="grid_fluid_12 show-grid-with-padding">
+						<div class="grid_4">
+							<div class="content">
+								01
+							</div>
+						</div>
+						<div class="grid_4">
+							<div class="content">
+								02
+							</div>
+						</div>
+						<div class="grid_4">
+							<div class="content">
+								03
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- page-header -->
+		<div id="page-navigation">
+			<div class="grid_fluid_12">
+				<div class="grid_12">
+					<div class="content">
+						<div class="box">
+							<div class="box_header">
+								<h2><a href="" class="toggle-content" >Formular</a></h2>
+							</div>
+							<div class="box_content">
+								<div class="form">
+									<fieldset>
+										<legend>Persönliche Daten</legend>
+										<div class="row">
+											<div class="label"><label>Anrede</label></div>
+											<div class="field">
+												<select><option>Herr as d fasd  fasd fas d fas d fasd  fasd f</option><option>Frau</option></select>
+											</div>
+										</div>
+										<div class="row">
+											<div class="label"><label>Vorname</label></div>
+											<div class="field">
+												<input type="text" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="label"><label>Nachname</label></div>
+											<div class="field">
+												<input type="text" />
+											</div>
+										</div>
+									</fieldset>
+									<fieldset>
+										<legend>Adresse</legend>
+										<div class="row">
+											<div class="label"><label>Straße und Hausnummer</label></div>
+											<div class="field">
+												<input type="text" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="label"><label>PLZ</label></div>
+											<div class="field">
+												<input type="text" />
+												<div class="field-notice">a small notice</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="label"><label>Ort</label></div>
+											<div class="field">
+												<input type="text" />
+											</div>
+										</div>
+									</fieldset>
+									<fieldset>
+										<legend>Kontakt</legend>
+										<div class="row">
+											<div class="label"><label>Telefon</label></div>
+											<div class="field">
+												<input type="text" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="label"><label>E-Mail</label></div>
+											<div class="field">
+												<input type="text" />
+											</div>
+										</div>
+									</fieldset>
+
+									<fieldset>
+										<legend>Nachricht</legend>
+										<div class="row">
+											<div class="label"><label>Text</label></div>
+											<div class="field">
+												<textarea type="text" /></textarea>
+											</div>
+										</div>
+										<div class="row">
+											<div class="label"><label>E-Mail</label></div>
+											<div class="field">
+												<label><input type="checkbox" />this</label>
+												<label><input type="checkbox" />that</label>
+											</div>
+										</div>
+									</fieldset>
+									
+									<fieldset>
+										<legend>Abschicken</legend>
+										<div class="row">
+											<div class="label"><label>AGB</label></div>
+											<div class="field">
+												<label><input type="radio" />ja</label>
+												<label><input type="radio" />nein</label>
+											</div>
+										</div>
+										<div class="row">
+											<div class="label">&nbsp;</div>
+											<div class="field">
+												<input type="submit" value="Absenden"/>
+											</div>
+										</div>
+									</fieldset>
+									
+								</div>	
+							</div>	
+						</div><!-- box -->
+					</div>
+				</div>
+			</div>		
+			<div class="grid_fluid_12">
+				<div class="grid_6">
+					<div class="content">
+						<div class="box">
+							<div class="box_header">
+								<h2><a href="" class="toggle-content">navigation horizontal</a></h2>
+							</div>
+							<div class="box_content">
+
+							<h3>navigation horizontal dropdown</h3>
+								<div class="navigation horizontal dropdown">
+									<ul>
+										<li>
+											<a>Menu 1</a>
+											<ul>
+												<li><a>Submenu 1</a></li>
+												<li><a>Submenu 2</a></li>
+												<li><a>Submenu 3</a></li>
+												<li><a>Submenu 4</a></li>
+												<li><a>Submenu 5</a></li>
+											</ul>									
+										</li>
+										<li>
+											<a>Menu 2</a>
+											<ul>
+												<li><a>Submenu 1</a></li>
+												<li><a class="icon icon_cancel">Submenu 2</a></li>
+												<li><a>Submenu 3</a></li>
+												<li><a>Submenu 4</a></li>
+												<li><a>Submenu 5</a></li>
+											</ul>									
+										</li>
+										<li>
+											<a>Menu 3</a>
+											<ul>
+												<li><a>Submenu 1</a></li>
+												<li><a>Submenu 2</a></li>
+												<li><a>Submenu 3</a></li>
+												<li><a>Submenu 4</a></li>
+												<li><a>Submenu 5</a></li>
+											</ul>
+										</li>
+										<li>
+											<a>Menu 4</a>
+											<ul>
+												<li><a>Submenu 1</a></li>
+												<li><a>Submenu 2</a></li>
+												<li><a>Submenu 3</a></li>
+												<li><a>Submenu 4</a></li>
+												<li><a>Submenu 5</a></li>
+											</ul>									
+										</li>
+									</ul>
+								</div>						
+								<h3>navigation horizontal block left</h3>
+								<div class="navigation horizontal block">
+									<ul>
+										<li><a>Link 1</a></li>
+										<li><a>Link 2</a></li>
+										<li><a>Link 3</a></li>
+										<li><a>Link 4</a></li>
+									</ul>					
+								</div><!-- navigation -->
+								
+								<h3>navigation horizontal block center</h3>
+								<div class="navigation horizontal block center">
+									<ul>
+										<li><a>Link 1</a></li>
+										<li><a>Link 2</a></li>
+										<li><a>Link 3</a></li>
+										<li><a>Link 4</a></li>
+									</ul>					
+								</div><!-- navigation -->
+								
+								<h3>navigation horizontal block right</h3>
+								<div class="navigation horizontal block right">
+									<ul>
+										<li><a>Link 1</a></li>
+										<li><a>Link 2</a></li>
+										<li><a>Link 3</a></li>
+										<li><a>Link 4</a></li>
+									</ul>					
+								</div><!-- navigation -->
+								
+								<h3>navigation horizontal inline</h3>
+								<div class="navigation horizontal inline">
+									<ul>
+										<li><a>Link 1</a></li>
+										<li><a>Link 2</a></li>
+										<li><a>Link 3</a></li>
+										<li><a>Link 4</a></li>
+									</ul>					
+								</div><!-- navigation -->
+								
+								<h3>navigation horizontal inline center</h3>
+								<div class="navigation horizontal inline center">
+									<ul>
+										<li><a>Link 1</a></li>
+										<li><a>Link 2</a></li>
+										<li><a>Link 3</a></li>
+										<li><a>Link 4</a></li>
+									</ul>					
+								</div><!-- navigation -->
+								
+								<h3>navigation horizontal inline right</h3>
+								<div class="navigation horizontal inline right">
+									<ul>
+										<li><a>Link 1</a></li>
+										<li><a>Link 2</a></li>
+										<li><a>Link 3</a></li>
+										<li><a>Link 4</a></li>
+									</ul>					
+								</div><!-- navigation -->
+
+								<h3>navigation horizontal inline with icons</h3>
+								<div class="navigation horizontal inline">
+									<ul>
+										<li class="icon icon_cancel"><a>Link 1</a></li>
+										<li><a>Link 2</a></li>
+										<li><a>Link 3</a></li>
+										<li><a>Link 4</a></li>
+									</ul>					
+								</div><!-- navigation -->
+
+								<h3>navigation horizontal block with icons</h3>
+								<div class="navigation horizontal block">
+									<ul>
+										<li class="icon icon_cancel"><a>Link 1</a></li>
+										<li><a>Link 2</a></li>
+										<li><a>Link 3</a></li>
+										<li><a>Link 4</a></li>
+									</ul>					
+								</div><!-- navigation -->
+
+								<h3>navigation horizontal inline with icons in link</h3>
+								<div class="navigation horizontal inline">
+									<ul>
+										<li><a class="icon icon_cancel">Link 1</a></li>
+										<li><a>Link 2</a></li>
+										<li><a>Link 3</a></li>
+										<li><a>Link 4</a></li>
+									</ul>					
+								</div><!-- navigation -->
+
+								<h3>navigation horizontal block with icons in link</h3>
+								<div class="navigation horizontal block">
+									<ul>
+										<li><a class="icon icon_cancel">Link 1</a></li>
+										<li><a>Link 2</a></li>
+										<li><a>Link 3</a></li>
+										<li><a>Link 4</a></li>
+									</ul>					
+								</div><!-- navigation -->
+															
+							</div>	
+						</div><!-- box -->
+					</div>
+					
+				</div>
+				<div class="grid_6">
+					<div class="content">
+						<div class="box">
+							<div class="box_header">
+								<h2><a href="" class="toggle-content" >Formular Elemente im Text</a></h2>
+							</div>
+							<div class="box_content">
+								<p>
+	Lorem ipsum dolor sit amet, consetetur <input type="text" /> sadipscing elitr, sed diam nonumy eirmod <input type="checkbox" /> tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd <input type="submit" value="Absenden"/> gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna <select><option>Herr</option><option>Frau</option></select> aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur <input type="text" /> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore <input type="radio" /> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.							
+								</p>
+							</div>	
+						</div><!-- box -->
+					</div>
+				</div>
+			</div>		
+		</div><!-- page-navigation -->
+		<div id="page-main">
+			<div class="grid_fluid_12">
+				<div class="grid_3">
+					<div class="content">
+						<div class="box">
+							<div class="box_header">
+								<h2><a href="" class="toggle-content" >Überschrift</a></h2>
+							</div>
+							<div class="box_content">
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla viverra aliquet mi. Cras urna. Curabitur diam. Curabitur eros nibh, condimentum eu, tincidunt at, commodo vitae, nisi.</p>						
+							</div>	
+						</div><!-- box -->
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="content">
+						<div class="box">
+							<div class="box_header">
+								<h2><a href="" class="toggle-content" >Überschrift</a></h2>
+							</div>
+							<div class="box_content">
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla viverra aliquet mi. Cras urna. Curabitur diam. Curabitur eros nibh, condimentum eu, tincidunt at, commodo vitae, nisi.</p>						
+							</div>	
+						</div><!-- box -->
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="content">
+						<div class="box">
+							<div class="box_header">
+								<h2><a href="" class="toggle-content" >Überschrift</a></h2>
+							</div>
+							<div class="box_content">
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla viverra aliquet mi. Cras urna. Curabitur diam. Curabitur eros nibh, condimentum eu, tincidunt at, commodo vitae, nisi.</p>						
+							</div>	
+						</div><!-- box -->
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="content">
+						<div class="box">
+							<div class="box_header">
+								<h2><a href="" class="toggle-content" >Überschrift</a></h2>
+							</div>
+							<div class="box_content">
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla viverra aliquet mi. Cras urna. Curabitur diam. Curabitur eros nibh, condimentum eu, tincidunt at, commodo vitae, nisi.</p>
+							</div>	
+						</div><!-- box -->
+					</div>
+				</div>
+			</div>
+
+			<div class="grid_fluid_12">
+				<div class="grid_3">
+					<div class="content">
+						<div class="box">
+							<div class="box_header">
+								<h2><a href="" class="toggle-content" >navigation vertical</a></h2>
+							</div>
+							<div class="box_content">
+								<h3>navigation vertical block</h3>
+								<div class="navigation vertical block">
+									<ul>
+										<li><a>Menu 1</a></li>
+										<li><a>Menu 2</a>
+											<ul>
+												<li><a>Submenu 1</a></li>
+												<li><a>Submenu 2</a></li>
+												<li><a>Submenu 3</a></li>
+												<li><a>Submenu 4</a></li>
+												<li><a>Submenu 5</a></li>
+											</ul>									
+										</li>
+										<li><a>Menu 3</a></li>
+										<li><a>Menu 4</a></li>
+									</ul>
+								</div>
+								<h3>navigation vertical inline</h3>
+								<div class="navigation vertical inline">
+									<ul>
+										<li><a>Menu 1</a></li>
+										<li><a>Menu 2</a></li>
+										<li>
+											<a>Menu 3</a>
+											<ul>
+												<li><a>Submenu 1</a></li>
+												<li><a>Submenu 2</a></li>
+												<li><a>Submenu 3</a></li>
+												<li><a>Submenu 4</a></li>
+												<li><a>Submenu 5</a></li>
+											</ul>
+										</li>
+										<li><a>Menu 4</a></li>
+									</ul>
+								</div>
+							</div>
+						</div><!-- box -->
+					</div>
+				</div>
+				<div class="grid_9">
+					<div class="content">
+						<div class="box">
+							<div class="box_header">
+								<h2><a href="" class="toggle-content" >Überschrift</a></h2>
+							</div>
+							<div class="box_content">
+
+								<table>
+									<tbody>
+										<tr>
+											<th>Some</th>
+											<th>headlines</th>
+											<th>and some</th>
+											<th>more headlines</th>
+										</tr>
+										<tr>
+											<td><a href="#">Link</a></td>
+											<td>Lorem ipsum</td>
+											<td>Lorem ipsum dolor sit amet.</td>
+											<td><a href="#">Download</a></td>
+										</tr>
+										<tr>
+											<td><a href="#">Link</a></td>
+											<td>Lorem ipsum</td>
+											<td>Lorem ipsum dolor sit amet.</td>
+											<td><a href="#">Download</a></td>
+										</tr>
+										<tr>
+											<td><a href="#">Link</a></td>
+											<td>Lorem ipsum</td>
+											<td>Lorem ipsum dolor sit amet.</td>
+											<td><a href="#">Download</a></td>
+										</tr>
+										<tr>
+											<td><a href="#">Link</a></td>
+											<td>Lorem ipsum</td>
+											<td>Lorem ipsum dolor sit amet.</td>
+											<td><a href="#">Download</a></td>
+										</tr>
+										<tr>
+											<td><a href="#">Link</a></td>
+											<td>Lorem ipsum</td>
+											<td>Lorem ipsum dolor sit amet.</td>
+											<td><a href="#">Download</a></td>
+										</tr>
+									</tbody>
+								</table>
+
+							</div>
+						</div><!-- box -->
+					</div>
+				</div>
+			</div>
+			<div class="grid_fluid_12">
+				<div class="grid_12">
+					<div class="content">
+						<div class="box show-grid">
+							<div class="box_header">
+								<h2><a href="" class="toggle-content" >Überschrift</a></h2>
+							</div>
+							<div class="box_content">
+								<div class="grid_fluid_12">
+									<div class="grid_1">
+										<div class="content">
+											01
+										</div>
+									</div>
+									<div class="grid_1">
+										<div class="content">
+											02
+										</div>
+									</div>
+									<div class="grid_1">
+										<div class="content">
+											03
+										</div>
+									</div>
+									<div class="grid_1">
+										<div class="content">
+											04
+										</div>
+									</div>
+									<div class="grid_1">
+										<div class="content">
+											05
+										</div>
+									</div>
+									<div class="grid_1">
+										<div class="content">
+											06
+										</div>
+									</div>
+									<div class="grid_1">
+										<div class="content">
+											07
+										</div>
+									</div>
+									<div class="grid_1">
+										<div class="content">
+											08
+										</div>
+									</div>
+									<div class="grid_1">
+										<div class="content">
+											09
+										</div>
+									</div>
+									<div class="grid_1">
+										<div class="content">
+											10
+										</div>
+									</div>
+									<div class="grid_1">
+										<div class="content">
+											11
+										</div>
+									</div>
+									<div class="grid_1">
+										<div class="content">
+											12
+										</div>
+									</div>
+									
+									<div class="clear"></div>
+									
+									<div class="grid_2">
+										<div class="content">
+											01
+										</div>
+									</div>
+									<div class="grid_2">
+										<div class="content">
+											02
+										</div>
+									</div>
+									<div class="grid_2">
+										<div class="content">
+											03
+										</div>
+									</div>
+									<div class="grid_2">
+										<div class="content">
+											04
+										</div>
+									</div>
+									<div class="grid_2">
+										<div class="content">
+											05
+										</div>
+									</div>
+									<div class="grid_2">
+										<div class="content">
+											06
+										</div>
+									</div>
+									
+									<div class="clear"></div>
+																	
+									<div class="grid_3">
+										<div class="content">
+											01
+										</div>
+									</div>
+									<div class="grid_3">
+										<div class="content">
+											02
+										</div>
+									</div>
+									<div class="grid_3">
+										<div class="content">
+											03
+										</div>
+									</div>
+									<div class="grid_3">
+										<div class="content">
+											04
+										</div>
+									</div>
+									
+									<div class="clear"></div>
+										
+									<div class="grid_4">
+										<div class="content">
+											01
+										</div>
+									</div>
+									<div class="grid_4">
+										<div class="content">
+											02
+										</div>
+									</div>
+									<div class="grid_4">
+										<div class="content">
+											03
+										</div>
+									</div>
+									
+									<div class="clear"></div>
+										
+									<div class="grid_5">
+										<div class="content">
+											01
+										</div>
+									</div>
+									<div class="grid_7">
+										<div class="content">
+											02
+										</div>
+									</div>
+									
+									<div class="clear"></div>
+										
+									<div class="grid_6">
+										<div class="content">
+											01
+										</div>
+									</div>
+									<div class="grid_6">
+										<div class="content">
+											02
+										</div>
+									</div>
+									
+									<div class="clear"></div>
+										
+									<div class="grid_1 grid_append_11">
+										<div class="content">
+											01
+										</div>
+									</div>
+									
+									<div class="clear"></div>
+										
+									<div class="grid_1 grid_prepend_1 grid_append_10">
+										<div class="content">
+											02
+										</div>
+									</div>
+									
+									<div class="clear"></div>
+										
+									<div class="grid_1 grid_prepend_2 grid_append_9">
+										<div class="content">
+											03
+										</div>
+									</div>
+									
+									<div class="clear"></div>
+										
+									<div class="grid_1 grid_prepend_3 grid_append_8">
+										<div class="content">
+											04
+										</div>
+									</div>
+									
+									<div class="clear"></div>
+										
+									<div class="grid_1 grid_prepend_4 grid_append_7">
+										<div class="content">
+											05
+										</div>
+									</div>
+									
+									<div class="clear"></div>
+										
+									<div class="grid_1 grid_prepend_5 grid_append_6">
+										<div class="content">
+											06
+										</div>
+									</div>
+									
+									<div class="clear"></div>
+										
+									<div class="grid_1 grid_prepend_6 grid_append_5">
+										<div class="content">
+											07
+										</div>
+									</div>
+									
+									<div class="clear"></div>
+										
+									<div class="grid_1 grid_prepend_7 grid_append_4">
+										<div class="content">
+											08
+										</div>
+									</div>
+									
+									<div class="clear"></div>
+										
+									<div class="grid_1 grid_prepend_8 grid_append_3">
+										<div class="content">
+											09
+										</div>
+									</div>
+									
+									<div class="clear"></div>
+										
+									<div class="grid_1 grid_prepend_9 grid_append_2">
+										<div class="content">
+											10
+										</div>
+									</div>
+									
+									<div class="clear"></div>
+										
+									<div class="grid_1 grid_prepend_10 grid_append_1">
+										<div class="content">
+											11
+										</div>
+									</div>
+									
+									<div class="clear"></div>
+										
+									<div class="grid_1 grid_prepend_11">
+										<div class="content">
+											12
+										</div>
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+						</div><!-- box -->
+					</div>
+				</div>
+			</div><!-- grid_fluid_12 -->
+		</div><!-- page-main -->
+		<div class="page-footer">
+			<div class="grid-row">
+			</div>		
+		</div><!-- page-footer -->
+	</div><!-- page -->
+
+</body>
+</html>

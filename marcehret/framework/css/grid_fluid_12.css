@@ -1,0 +1,57 @@
+
+
+/*		fluid grid with 12 columns
+------------------------------------------------------------------------------*/
+
+.grid_fluid_12 .grid_1				{width:8.332%;}
+.grid_fluid_12 .grid_2				{width:16.665%;}
+.grid_fluid_12 .grid_3				{width:24.97%;}
+.grid_fluid_12 .grid_4				{width:33.30%;}
+.grid_fluid_12 .grid_5				{width:41.665%;}
+.grid_fluid_12 .grid_6				{width:49.999%;}
+.grid_fluid_12 .grid_7				{width:58.332%;}
+.grid_fluid_12 .grid_8				{width:66.665%;}
+.grid_fluid_12 .grid_9				{width:74.999%;}
+.grid_fluid_12 .grid_10				{width:83.332%;}
+.grid_fluid_12 .grid_11				{width:91.665%;}
+.grid_fluid_12 .grid_12				{width:100%;}
+
+.grid_fluid_12 .grid_1,
+.grid_fluid_12 .grid_2,
+.grid_fluid_12 .grid_3,
+.grid_fluid_12 .grid_4,
+.grid_fluid_12 .grid_5,
+.grid_fluid_12 .grid_6,
+.grid_fluid_12 .grid_7,
+.grid_fluid_12 .grid_8,
+.grid_fluid_12 .grid_9,
+.grid_fluid_12 .grid_10,
+.grid_fluid_12 .grid_11,
+.grid_fluid_12 .grid_12
+{
+padding:0;
+}
+
+.grid_fluid_12 .grid_prepend_1		{margin-left:8.333%;}
+.grid_fluid_12 .grid_prepend_2		{margin-left:16.666%;}
+.grid_fluid_12 .grid_prepend_3		{margin-left:25%;}
+.grid_fluid_12 .grid_prepend_4		{margin-left:33.333%;}
+.grid_fluid_12 .grid_prepend_5		{margin-left:41.666%;}
+.grid_fluid_12 .grid_prepend_6		{margin-left:50%;}
+.grid_fluid_12 .grid_prepend_7		{margin-left:58.333%;}
+.grid_fluid_12 .grid_prepend_8		{margin-left:66.666%;}
+.grid_fluid_12 .grid_prepend_9		{margin-left:75%;}
+.grid_fluid_12 .grid_prepend_10		{margin-left:83.333%;}
+.grid_fluid_12 .grid_prepend_11		{margin-left:91.666%;}
+
+.grid_fluid_12 .grid_append_1		{margin-right:8.333%;}
+.grid_fluid_12 .grid_append_2		{margin-right:16.666%;}
+.grid_fluid_12 .grid_append_3		{margin-right:25%;}
+.grid_fluid_12 .grid_append_4		{margin-right:33.333%;}
+.grid_fluid_12 .grid_append_5		{margin-right:41.666%;}
+.grid_fluid_12 .grid_append_6		{margin-right:50%;}
+.grid_fluid_12 .grid_append_7		{margin-right:58.333%;}
+.grid_fluid_12 .grid_append_8		{margin-right:66.666%;}
+.grid_fluid_12 .grid_append_9		{margin-right:75%;}
+.grid_fluid_12 .grid_append_10		{margin-right:83.333%;}
+.grid_fluid_12 .grid_append_11		{margin-right:91.666%;}

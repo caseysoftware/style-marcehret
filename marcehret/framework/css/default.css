@@ -1,0 +1,80 @@
+/*	basic styles
+------------------------------------------------------------------------------*/
+
+body {font-size:14px;line-height:21px;font-family:sans-serif;}
+
+strong,b		{font-weight:bold}
+em,i,cite		{font-style:italic}
+code			{font-family:"Courier New",Courier,mono;}
+sup			{vertical-align:super;line-height:.5em;font-size:.8em;}
+sub			{vertical-align:sub;line-height:.5em;font-size:.8em;}
+strike		{text-decoration:line-through;}
+small			{font-size:smaller;}
+big			{font-size:large;}
+
+acronym,abbr
+{
+letter-spacing:.07em;
+border-bottom-width:1px;
+border-bottom-style:dashed;
+cursor:help;
+}
+
+label {}
+/* input, textarea, select {margin-bottom:10px;} */
+
+pre
+{
+font-family:monospace;
+white-space:pre-wrap;
+}
+
+ul, ol {padding-left:2em;}
+li ul, li ol {margin:0 0 0 2em;}
+ul {list-style-type:square;}
+ul ul {list-style-type:disc;}
+ol {list-style-type:decimal;}
+ol ol {list-style-type:lower-alpha;}
+
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6
+{
+font-weight:bold;
+}
+
+h1, .h1		{font-size:1.8em;}
+h2, .h2		{font-size:1.6em;}
+h3, .h3		{font-size:1.4em;}
+h4, .h4		{font-size:1.2em;}
+h5, .h5		{font-size:1em;}
+h6, .h6		{font-size:.9em;}
+
+
+table, td, th {border:1px solid #000;}
+table {}
+th, td {padding:2px;}
+th  {font-weight:bold;vertical-align:top;text-align:left;}
+td {vertical-align:top;}
+
+form {display:inline;}
+img {width:auto;height:auto;}
+
+fieldset {border:1px solid #000;padding:10px;}
+legend {}
+
+textarea
+{
+min-width : 99%;
+max-width : 99%;
+}
+input[type="text"], select, textarea, input[type="password"]
+{
+border:1px solid #ddd;
+}
+
+.form input[type="text"],.form input[type="password"], .form textarea {
+width:99%;
+padding:2px 0;
+border:1px solid #ddd;
+}

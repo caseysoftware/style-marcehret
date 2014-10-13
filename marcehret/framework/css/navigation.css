@@ -1,0 +1,101 @@
+/*
+	navigation
+--------------------------------------------------------------------------------------------------*/
+
+.navigation ul, .navigation li
+{
+list-style: none;
+padding:0;
+margin:0;
+background-image:none;
+border:0;
+}
+
+/* navigation horizontal */
+
+.navigation.horizontal > ul > li
+{
+float:left;
+margin-left:10px;
+}
+
+.navigation.horizontal > ul > li:first-child
+{
+margin-left:0;
+}
+
+.navigation.horizontal a
+{
+float:left;
+cursor: pointer;
+}
+
+/* navigation block */
+
+.navigation.block a
+{
+display:block;
+padding-left:10px;
+padding-right:10px;
+}
+
+/* navigation center */
+
+.navigation.center > ul
+{
+float:right;
+right:50%;
+position:relative;
+}
+
+.navigation.center > ul > li
+{
+float:left;
+left:50%;
+position:relative;
+}
+
+/* navigation right */
+
+.navigation.right > ul
+{
+float:right;
+}
+
+
+/* navigation vertical */
+
+.navigation.vertical li li a
+{
+padding-left:20px;
+}
+
+
+
+.navigation.vertical.block li li a
+{
+padding-left:30px;
+}
+
+.navigation.dropdown > ul > li > ul
+{
+display:none;
+position:absolute;
+}
+
+.navigation.dropdown a
+{
+display:block;
+padding:0 10px;
+float:none;
+background-color:#ccc;
+}
+
+.navigation.dropdown > ul > li:hover > ul
+{
+display:block;
+}
+
+.navigation .icon {padding-left:20px !important;background-repeat:no-repeat;background-position:2px 2px;}
+.navigation.dropdown a.icon {padding-left:30px !important;background-position:10px 2px;}
+.navigation .icon_cancel {background-image:url(../icon/icon_cancel.png);}
